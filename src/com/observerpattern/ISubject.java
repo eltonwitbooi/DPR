@@ -5,6 +5,8 @@
  */
 package com.observerpattern;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author Elton
@@ -14,5 +16,8 @@ public interface ISubject {
     public void register(IObserver observer);
     public void unRegister(IObserver observer);
     public void notifyObservers();
-    public void notifyGUI();
+    public ArrayList<IObserver> getObservers();
+    public String getName();
+    public double vote(int value);
+	
 }

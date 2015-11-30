@@ -10,8 +10,9 @@ package com.observerpattern;
  * @author Elton
  */
 public interface IObserver {
-    
+    // push update
+	public void update(ISubject subject);
+    // pull update
     public void update();
-    public void notifyUser();
-    
+   
 }
