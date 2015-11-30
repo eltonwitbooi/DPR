@@ -5,13 +5,16 @@
  */
 package com.observerpattern;
 
+import java.util.List;
+
 /**
  *
  * @author Elton
  */
 public interface IObserver {
     
-    public void update();
-    public void notifyUser();
+    public void update(List<Movie> movies);//push interface
+    public void updateLuxuryObserver();//for pull interface
+    
     
 }

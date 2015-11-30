@@ -5,14 +5,18 @@
  */
 package com.observerpattern;
 
+import java.util.List;
+
 /**
  *
  * @author Elton
  */
 public interface ISubject {
     
+    //methods for push interface
     public void register(IObserver observer);
     public void unRegister(IObserver observer);
-    public void notifyObservers();
-    public void notifyGUI();
+    public void notifyObservers(); 
+    
+   
 }
